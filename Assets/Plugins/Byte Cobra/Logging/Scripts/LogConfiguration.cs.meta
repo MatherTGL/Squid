@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4197af9495b3bf347a727973b9965e5c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Scripts/LogConfiguration.cs
+  uploadId: 656953

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 03515121745b2d74c8782ce92eb2a1a0
+timeCreated: 1455373897
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17276
+  packageName: UniRx - Reactive Extensions for Unity
+  packageVersion: 7.1.0
+  assetPath: Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableVisibleTrigger.cs
+  uploadId: 318694

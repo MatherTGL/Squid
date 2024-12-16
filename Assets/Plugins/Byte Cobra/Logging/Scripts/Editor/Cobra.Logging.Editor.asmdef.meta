@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cef074011f14d49498a7a96903980277
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Scripts/Editor/Cobra.Logging.Editor.asmdef
+  uploadId: 656953

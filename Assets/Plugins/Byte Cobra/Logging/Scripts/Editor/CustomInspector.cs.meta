@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: f09d4860be4b31c47870c3162e5c6bfe
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - baseVisualTree: {fileID: 9197481963319205126, guid: 6627b5bfbfa576842ba41ed4fb53dfa9,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Scripts/Editor/CustomInspector.cs
+  uploadId: 656953

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f4980e1e001c7e94fab3250ba284dc91
+timeCreated: 1468655394
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17276
+  packageName: UniRx - Reactive Extensions for Unity
+  packageVersion: 7.1.0
+  assetPath: Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit/ObjectPool.cs
+  uploadId: 318694

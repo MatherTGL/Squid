@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8706ef5a13e53ec46b4848a7eec5e826
+timeCreated: 1455373900
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17276
+  packageName: UniRx - Reactive Extensions for Unity
+  packageVersion: 7.1.0
+  assetPath: Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntryExtensions.cs
+  uploadId: 318694

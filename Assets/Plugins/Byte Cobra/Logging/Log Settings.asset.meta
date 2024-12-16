@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: de3c9bd2abfba31478c0796b8f6f5404
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Log Settings.asset
+  uploadId: 656953

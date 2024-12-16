@@ -24,7 +24,8 @@
 /[Aa]ssets/Plugins/Editor/JetBrains*
 
 # Visual Studio cache directory
-.vs/
+/.vs
+/.vscode
 
 # Gradle cache directory
 .gradle/
@@ -60,7 +61,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
-
+/Bulids
 # Crashlytics generated file
 crashlytics-build.properties
 
@@ -70,3 +71,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/.idea
+/.vscode

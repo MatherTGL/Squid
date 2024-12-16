@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6c25daf76a86b6b41a157547c83935ec
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Scripts/Editor/UIUtils.cs
+  uploadId: 656953

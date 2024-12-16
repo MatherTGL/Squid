@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 16af96d9f48e91241b6b625ca1772a21
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Filters/Directory Filters.asset
+  uploadId: 656953

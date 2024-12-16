@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 560b04d1a97f54a4e82edc0cbbb69285
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 17276
+  packageName: UniRx - Reactive Extensions for Unity
+  packageVersion: 7.1.0
+  assetPath: Assets/Plugins/UniRx/Scripts/UniRx.asmdef
+  uploadId: 318694

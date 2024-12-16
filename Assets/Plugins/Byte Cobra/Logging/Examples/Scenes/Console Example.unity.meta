@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4c5179200d3a452459f5254e970b5ff8
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Examples/Scenes/Console Example.unity
+  uploadId: 656953

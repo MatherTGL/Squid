@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dc7210e18377b5342aa71980418f5520
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Filters/Namespace Filters.asset
+  uploadId: 656953

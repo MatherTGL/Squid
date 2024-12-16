@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b59d9fd472aae264b8bee4dfb2cbd808
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Prefabs/Log Initializer.prefab
+  uploadId: 656953

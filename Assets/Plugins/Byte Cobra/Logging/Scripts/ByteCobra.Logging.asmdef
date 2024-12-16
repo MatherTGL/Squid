@@ -1,0 +1,16 @@
+{
+    "name": "ByteCobra.Logging",
+    "rootNamespace": "ByteCobra.Logging",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Cobra.Logging.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

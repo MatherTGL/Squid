@@ -1,0 +1,1129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cobra.Logging</name>
+    </assembly>
+    <members>
+        <member name="T:ByteCobra.Logging.Assert">
+            <summary>
+            Provides assertion methods for validating conditions and logging messages.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.NotNull``1(System.Linq.Expressions.Expression{System.Func{``0}},System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified parameter is not null.
+            </summary>
+            <typeparam name="T">The type of the parameter.</typeparam>
+            <param name="parameterExpression">An expression representing the parameter to check.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.NotEmpty``1(System.Linq.Expressions.Expression{System.Func{System.Collections.Generic.IEnumerable{``0}}},System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified collection is not empty.
+            </summary>
+            <typeparam name="T">The type of elements in the collection.</typeparam>
+            <param name="parameterExpression">An expression representing the collection to check.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.NotNullOrWhitespace(System.Linq.Expressions.Expression{System.Func{System.String}},System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified string is not null or whitespace.
+            </summary>
+            <param name="parameterExpression">An expression representing the string to check.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.GreaterThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified value is greater than the specified limit.
+            </summary>
+            <typeparam name="T">The type of the value and limit.</typeparam>
+            <param name="parameterExpression">An expression representing the value to check.</param>
+            <param name="limit">The limit to compare against.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.LessThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified value is less than the specified limit.
+            </summary>
+            <typeparam name="T">The type of the value and limit.</typeparam>
+            <param name="parameterExpression">An expression representing the value to check.</param>
+            <param name="limit">The limit to compare against.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.InRange``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified value is within the specified range (inclusive).
+            </summary>
+            <typeparam name="T">The type of the value, min, and max.</typeparam>
+            <param name="parameterExpression">An expression representing the value to check.</param>
+            <param name="min">The minimum value of the range.</param>
+            <param name="max">The maximum value of the range.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.NotNullOrEmpty``1(System.Linq.Expressions.Expression{System.Func{System.Collections.Generic.IEnumerable{``0}}},System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified collection is not null and not empty.
+            </summary>
+            <typeparam name="T">The type of elements in the collection.</typeparam>
+            <param name="parameterExpression">An expression representing the collection to check.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.AreEqual``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the value of the specified parameter is equal to the expected value.
+            </summary>
+            <typeparam name="T">The type of the parameter and the expected value.</typeparam>
+            <param name="parameterExpression">An expression representing the parameter to check.</param>
+            <param name="expectedValue">The expected value to compare against the parameter's value.</param>
+            <param name="message">An optional message to include in the log entry. If not provided, a default message indicating the expected and actual values will be used.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails. Defaults to false.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion. Returns null if the assertion passes (i.e., the values are equal).</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.Contains``1(System.Linq.Expressions.Expression{System.Func{System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,System.Boolean},System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified collection contains at least one item that satisfies the provided condition.
+            </summary>
+            <typeparam name="T">The type of elements in the collection.</typeparam>
+            <param name="collectionExpression">An expression representing the collection to check.</param>
+            <param name="condition">A predicate function to test each element for a condition.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.DoesNotContain``1(System.Linq.Expressions.Expression{System.Func{System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,System.Boolean},System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified collection does not contain any item that satisfies the provided condition.
+            </summary>
+            <typeparam name="T">The type of elements in the collection.</typeparam>
+            <param name="collectionExpression">An expression representing the collection to check.</param>
+            <param name="condition">A predicate function to test each element for a condition.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Assert.Implements``1(System.Linq.Expressions.Expression{System.Func{System.Object}},System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Asserts that the specified object implements the specified interface.
+            </summary>
+            <typeparam name="TInterface">The interface type that the object is expected to implement.</typeparam>
+            <param name="objectExpression">An expression representing the object to check.</param>
+            <param name="message">An optional message to include in the log entry.</param>
+            <param name="throwException">A flag indicating whether to throw an exception if the assertion fails.</param>
+            <param name="file">The file path of the caller (automatically provided).</param>
+            <param name="line">The line number of the caller (automatically provided).</param>
+            <param name="state">An optional state object to include in the log entry.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> object representing the result of the assertion.</returns>
+        </member>
+        <member name="T:ByteCobra.Logging.BaseLog">
+            <summary>
+            Provides a base class for log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.OriginalMessage">
+            <summary>
+            Gets the original log message.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.FormattedMessage">
+            <summary>
+            Gets the formatted log message.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.Color">
+            <summary>
+            Gets the color associated with the log message.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.Type">
+            <summary>
+            Gets the type of the log (e.g., Debug, Info, Warning).
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.Tag">
+            <summary>
+            Gets the tag associated with the log message.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.FileName">
+            <summary>
+            Gets the file path of the log's source.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.FileInfo">
+            <summary>
+            Gets information about the log's source file.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.Line">
+            <summary>
+            Gets the line number of the log's source.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.StackTrace">
+            <summary>
+            Gets the stack trace associated with the log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.State">
+            <summary>
+            Gets the state of the object associated with the log message.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.BaseLog.Time">
+            <summary>
+            Gets the timestamp when the log was created.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.BaseLog.#ctor(System.Diagnostics.StackTrace,System.String,System.Int32,System.Object,ByteCobra.Logging.ObjectState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.BaseLog"/> class.
+            </summary>
+            <param name="stackTrace">The stack trace associated with the log.</param>
+            <param name="filePath">The file path of the log's source.</param>
+            <param name="line">The line number of the log's source.</param>
+            <param name="message">The log message.</param>
+            <param name="objectState">The state of the object associated with the log message.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.Clock.Start(System.String)">
+            <summary>
+            Starts or restarts a timer. If the key is null, a default timer is used.
+            </summary>
+            <param name="key">The key to identify the timer, or null to use the default timer.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.Clock.Stop(System.String,System.Boolean)">
+            <summary>
+            Stops the timer and returns the elapsed time. Logs the elapsed time or an error if the timer was not started.
+            If the key is null or empty, the default timer is stopped. Optionally logs the result.
+            </summary>
+            <param name="key">The key to identify the timer, or null/empty for the default timer.</param>
+            <param name="log">Whether to log the stopping of the timer.</param>
+            <returns>The TimeSpan representing the elapsed time since the timer was started.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.CollectionExtensions.ToCsv(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Converts a collection of objects into a comma-separated values (CSV) string.
+            </summary>
+            <param name="collection">The collection of objects to convert.</param>
+            <returns>A CSV string representation of the collection.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.CollectionExtensions.ToCsvFile(System.Collections.Generic.IEnumerable{System.Object},System.String)">
+            <summary>
+            Converts a collection of objects into a CSV file.
+            </summary>
+            <param name="collection">The collection of objects to convert.</param>
+            <param name="path">The file path where the CSV will be saved.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.CollectionExtensions.ToJson(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Converts a collection of objects into a JSON string using Newtonsoft.Json.
+            </summary>
+            <param name="collection">The collection of objects to convert.</param>
+            <returns>A JSON string representation of the collection.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.CollectionExtensions.ToJsonFile(System.Collections.Generic.IEnumerable{System.Object},System.String)">
+            <summary>
+            Converts a collection of objects into a JSON file.
+            </summary>
+            <param name="collection">The collection of objects to convert.</param>
+            <param name="path">The file path where the JSON will be saved.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Filter">
+            <summary>
+            Represents a base class for log filters.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Filter.FilterType">
+            <summary>
+            Gets the type of filter.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Filter.#ctor(ByteCobra.Logging.FilterType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Filter"/> class with the specified filter type.
+            </summary>
+            <param name="filterType">The type of filter.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.Filter.Validate(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Validates whether a log message passes the filter conditions.
+            </summary>
+            <param name="log">The log message to be validated.</param>
+            <returns><c>true</c> if the log message passes the filter conditions, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="T:ByteCobra.Logging.Filters.DirectoryFilter">
+            <summary>
+            Represents a filter that filters log entries based on the directory path of the log file.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Filters.DirectoryFilter.DirectoryLevels">
+            <summary>
+            Gets or sets the dictionary of directory paths and their corresponding minimum log levels.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Filters.DirectoryFilter.#ctor(System.Collections.Generic.Dictionary{System.String,ByteCobra.Logging.LogLevel},ByteCobra.Logging.FilterType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Filters.DirectoryFilter"/> class with the specified filter type and directories.
+            </summary>
+            <param name="filterType">The filter type to be applied.</param>
+            <param name="directories">The dictionary of directory paths and their corresponding minimum log levels.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.Filters.DirectoryFilter.Validate(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Validates whether a log entry should be included based on the directory path of the log file.
+            </summary>
+            <param name="log">The log entry to be validated.</param>
+            <returns><c>true</c> if the log entry is valid based on directory filtering; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="T:ByteCobra.Logging.Filters.MessageFilter">
+            <summary>
+            A filter that validates log entries based on their original log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Filters.MessageFilter.Messages">
+            <summary>
+            Gets the set of log messages to match against.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Filters.MessageFilter.UseContainsCheck">
+            <summary>
+            Gets or sets a value indicating whether the filter should check for a substring match or an exact match.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Filters.MessageFilter.StringComparison">
+            <summary>
+            Gets or sets the <see cref="P:ByteCobra.Logging.Filters.MessageFilter.StringComparison"/> used for comparing log messages.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Filters.MessageFilter.#ctor(System.Collections.Generic.IEnumerable{System.String},System.StringComparison,System.Boolean,ByteCobra.Logging.FilterType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Filters.MessageFilter"/> class with the specified filter type and messages.
+            </summary>
+            <param name="filterType">The type of filter.</param>
+            <param name="messages">The messages to match for filtering log entries.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.Filters.MessageFilter.Validate(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Validates a log entry based on its original message.
+            </summary>
+            <param name="log">The log entry to validate.</param>
+            <returns><c>true</c> if the log is valid according to the filter; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="T:ByteCobra.Logging.Filters.NamespaceFilter">
+            <summary>
+            Represents a filter that filters log entries based on the namespace of the log's originating method.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Filters.NamespaceFilter.NamespaceLevels">
+            <summary>
+            Gets or sets the dictionary of namespaces and their corresponding minimum log levels.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Filters.NamespaceFilter.#ctor(System.Collections.Generic.Dictionary{System.String,ByteCobra.Logging.LogLevel},ByteCobra.Logging.FilterType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Filters.NamespaceFilter"/> class with the specified filter type and namespaces.
+            </summary>
+            <param name="filterType">The filter type to be applied.</param>
+            <param name="namespaces">The dictionary of namespaces and their corresponding minimum log levels.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.Filters.NamespaceFilter.Validate(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Validates whether a log entry should be included based on the namespace of the method that generated the log.
+            </summary>
+            <param name="log">The log entry to be validated.</param>
+            <returns><c>true</c> if the log entry is valid based on namespace filtering; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="T:ByteCobra.Logging.FilterType">
+            <summary>
+            Represents the type of logical operation used for combining filters.
+            </summary>
+        </member>
+        <member name="F:ByteCobra.Logging.FilterType.And">
+            <summary>
+            Represents the logical "AND" operation for combining filters.
+            </summary>
+        </member>
+        <member name="F:ByteCobra.Logging.FilterType.Or">
+            <summary>
+            Represents the logical "OR" operation for combining filters.
+            </summary>
+        </member>
+        <member name="T:ByteCobra.Logging.JsonStateSerializer">
+            <summary>
+            Represents a JSON serializer for log object states.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.JsonStateSerializer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.JsonStateSerializer"/> class.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.JsonStateSerializer.SanitizeFileName(System.String)">
+            <summary>
+            Sanitizes a given file name by removing invalid characters.
+            </summary>
+            <param name="fileName">The original file name to be sanitized.</param>
+            <returns>The sanitized file name.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.JsonStateSerializer.GetFileName(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Gets the file name for serializing the state of the given log.
+            </summary>
+            <param name="log">The log for which the state is being serialized.</param>
+            <returns>The file name for the serialized state.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.JsonStateSerializer.Serialize(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Serializes the state of the given log and saves it to a file.
+            </summary>
+            <param name="log">The log for which the state is being serialized.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Log">
+            <summary>
+            Provides methods for creating and logging various types of log messages.
+            </summary>
+            <remarks>
+            The <see cref="T:ByteCobra.Logging.Log"/> class serves as a central point for creating and recording log messages
+            of different severity levels, such as informational, debug, warning, error, and assert logs.
+            It utilizes the configuration settings from <see cref="T:ByteCobra.Logging.Settings.LogSettings"/> to determine whether
+            specific types of logs are enabled and to customize their behavior. The class also allows the
+            option to capture stack traces and associate state information with log messages.
+            </remarks>
+        </member>
+        <member name="E:ByteCobra.Logging.Log.OnLog">
+            <summary>
+            Event triggered when a new log entry is created.
+            Listeners can subscribe to this event to receive log notifications.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.CaptureStackTrace(System.UInt16)">
+            <summary>
+            Captures a stack trace.
+            </summary>
+            <param name="skipFrames">Number of frames to skip in the stack trace.</param>
+            <returns>A <see cref="T:System.Diagnostics.StackTrace"/> instance.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.Validate(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Validates whether a log message passes the filter conditions.
+            </summary>
+            <param name="log">The log message to be validated.</param>
+            <returns><c>true</c> if the log message passes the filter conditions, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.Info(System.Object,System.String,System.Int32,System.Object)">
+            <summary>
+            Creates and logs an informational message.
+            </summary>
+            <param name="message">The log message to be recorded.</param>
+            <param name="file">The file path of the caller.</param>
+            <param name="line">The line number of the caller.</param>
+            <param name="state">An optional state object associated with the log.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.InfoLog"/> representing the recorded log.</returns>
+            <remarks>
+            This method is used to create and log an informational message. If info logs are enabled,
+            the provided message will be recorded along with additional contextual information.
+            </remarks>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.Debug(System.Object,System.String,System.Int32,System.Object)">
+            <summary>
+            Creates and logs a debug message.
+            </summary>
+            <param name="message">The log message to be recorded.</param>
+            <param name="file">The file path of the caller.</param>
+            <param name="line">The line number of the caller.</param>
+            <param name="state">An optional state object associated with the log.</param>
+            <returns>A <see cref="T:ByteCobra.Logging.Logs.DebugLog"/> representing the recorded log.</returns>
+            <remarks>
+            This method is used to create and log a debug message. If debug logs are enabled,
+            the provided message will be recorded along with additional contextual information.
+            </remarks>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.Warning(System.Object,System.String,System.Int32,System.Object)">
+            <summary>
+            Creates and logs a warning message.
+            </summary>
+            <param name="message">The log message to be recorded.</param>
+            <param name="file">The file path of the caller.</param>
+            <param name="line">The line number of the caller.</param>
+            <param name="state">An optional state object associated with the log.</param>
+            <returns>A <see cref="T:ByteCobra.Logging.Logs.WarningLog"/> representing the recorded log.</returns>
+            <remarks>
+            This method is used to create and log a warning message. If warnings are enabled,
+            the provided message will be recorded along with additional contextual information.
+            </remarks>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.Assert(System.Boolean,System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Creates and logs an assert message.
+            </summary>
+            <param name="condition">The condition to assert.</param>
+            <param name="message">The log message to be recorded.</param>
+            <param name="file">The file path of the caller.</param>
+            <param name="line">The line number of the caller.</param>
+            <param name="throwException">Whether to throw an exception on assertion failure.</param>
+            <param name="state">An optional state object associated with the log.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> representing the recorded log.</returns>
+            <remarks>
+            This method is used to create and log an assert message. If asserts are enabled,
+            the provided condition will be checked, and if it evaluates to false, an assert log
+            will be recorded along with additional contextual information. If <paramref name="throwException"/>
+            is set to true and the condition fails, an exception will be thrown after logging the assert message.
+            </remarks>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.Error(System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Creates and logs an error message.
+            </summary>
+            <param name="message">The log message to be recorded.</param>
+            <param name="file">The file path of the caller.</param>
+            <param name="line">The line number of the caller.</param>
+            <param name="throwException">Whether to throw an exception on error.</param>
+            <param name="state">An optional state object associated with the log.</param>
+            <returns>An <see cref="T:ByteCobra.Logging.Logs.ErrorLog"/> representing the recorded log.</returns>
+            <remarks>
+            This method is used to create and log an error message. If error logs are enabled,
+            the provided message will be recorded along with additional contextual information.
+            If <paramref name="throwException"/> is set to true, an exception may be thrown
+            after logging the error message, depending on the configured behavior.
+            </remarks>
+        </member>
+        <member name="M:ByteCobra.Logging.Log.Fatal(System.Object,System.Boolean,System.String,System.Int32,System.Object)">
+            <summary>
+            Creates and logs a fatal message.
+            </summary>
+            <param name="message">The log message to be recorded.</param>
+            <param name="file">The file path of the caller.</param>
+            <param name="line">The line number of the caller.</param>
+            <param name="quit">Whether to quit the application after logging.</param>
+            <param name="state">An optional state object associated with the log.</param>
+            <remarks>
+            This method is used to create and log a fatal message. If fatal logs are enabled,
+            the provided message will be recorded along with additional contextual information.
+            If <paramref name="quit"/> is set to true, the application may exit after logging
+            the fatal message, depending on the configured behavior.
+            </remarks>
+        </member>
+        <member name="T:ByteCobra.Logging.Logs.AssertLog">
+            <summary>
+            Represents a log entry for assertions.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.AssertLog.Tag">
+            <summary>
+            Gets the tag associated with the assertion logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.AssertLog.ThrowException">
+            <summary>
+            Gets a value indicating whether an exception should be thrown for this assertion log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.AssertLog.Type">
+            <summary>
+            Gets the type of the log entry.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.AssertLog.Color">
+            <summary>
+            Gets the color associated with the assertion log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.AssertLog.FormattedMessage">
+            <summary>
+            Gets the formatted message for the assertion log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.AssertLog.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Logs.AssertLog.#ctor(System.Boolean,System.Diagnostics.StackTrace,System.String,System.Int32,System.Object,ByteCobra.Logging.ObjectState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Logs.AssertLog"/> class.
+            </summary>
+            <param name="throwException">A value indicating whether an exception should be thrown for this assertion log.</param>
+            <param name="stackTrace">The stack trace associated with the log.</param>
+            <param name="fileName">The name of the source file.</param>
+            <param name="lineNumber">The line number in the source file.</param>
+            <param name="message">The log message.</param>
+            <param name="objectState">The object state associated with the log.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Logs.DebugLog">
+            <summary>
+            Represents a log entry for debugging messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.DebugLog.Tag">
+            <summary>
+            Gets the tag associated with debugging logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.DebugLog.Type">
+            <summary>
+            Gets the type of the log entry.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.DebugLog.Color">
+            <summary>
+            Gets the color associated with the debugging log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.DebugLog.FormattedMessage">
+            <summary>
+            Gets the formatted message for the debugging log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.DebugLog.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Logs.DebugLog.#ctor(System.Diagnostics.StackTrace,System.String,System.Int32,System.Object,ByteCobra.Logging.ObjectState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Logs.DebugLog"/> class.
+            </summary>
+            <param name="stackTrace">The stack trace associated with the log.</param>
+            <param name="fileName">The name of the source file.</param>
+            <param name="lineNumber">The line number in the source file.</param>
+            <param name="message">The log message.</param>
+            <param name="objectState">The object state associated with the log.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Logs.ErrorLog">
+            <summary>
+            Represents a log entry for error messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.ErrorLog.Tag">
+            <summary>
+            Gets the tag associated with error logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.ErrorLog.ThrowException">
+            <summary>
+            Gets a value indicating whether an exception should be thrown for the error.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.ErrorLog.Type">
+            <summary>
+            Gets the type of the log entry.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.ErrorLog.Color">
+            <summary>
+            Gets the color associated with the error log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.ErrorLog.FormattedMessage">
+            <summary>
+            Gets the formatted message for the error log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.ErrorLog.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Logs.ErrorLog.#ctor(System.Boolean,System.Diagnostics.StackTrace,System.String,System.Int32,System.Object,ByteCobra.Logging.ObjectState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Logs.ErrorLog"/> class.
+            </summary>
+            <param name="throwException">A value indicating whether to throw an exception for the error.</param>
+            <param name="stackTrace">The stack trace associated with the log.</param>
+            <param name="fileName">The name of the source file.</param>
+            <param name="lineNumber">The line number in the source file.</param>
+            <param name="message">The log message.</param>
+            <param name="objectState">The object state associated with the log.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Logs.FatalLog">
+            <summary>
+            Represents a log entry for fatal messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.FatalLog.Tag">
+            <summary>
+            Gets the tag associated with fatal logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.FatalLog.Quit">
+            <summary>
+            Gets a value indicating whether the application should quit due to the fatal error.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.FatalLog.Type">
+            <summary>
+            Gets the type of the log entry.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.FatalLog.Color">
+            <summary>
+            Gets the color associated with the fatal log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.FatalLog.FormattedMessage">
+            <summary>
+            Gets the formatted message for the fatal log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.FatalLog.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Logs.FatalLog.#ctor(System.Boolean,System.Diagnostics.StackTrace,System.String,System.Int32,System.Object,ByteCobra.Logging.ObjectState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Logs.FatalLog"/> class.
+            </summary>
+            <param name="quit">A value indicating whether the application should quit due to the fatal error.</param>
+            <param name="stackTrace">The stack trace associated with the log.</param>
+            <param name="fileName">The name of the source file.</param>
+            <param name="lineNumber">The line number in the source file.</param>
+            <param name="message">The log message.</param>
+            <param name="objectState">The object state associated with the log.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Logs.InfoLog">
+            <summary>
+            Represents a log entry for informational messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.InfoLog.Tag">
+            <summary>
+            Gets the tag associated with informational logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.InfoLog.Type">
+            <summary>
+            Gets the type of the log entry.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.InfoLog.Color">
+            <summary>
+            Gets the color associated with the informational log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.InfoLog.FormattedMessage">
+            <summary>
+            Gets the formatted message for the informational log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.InfoLog.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Logs.InfoLog.#ctor(System.Diagnostics.StackTrace,System.String,System.Int32,System.Object,ByteCobra.Logging.ObjectState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Logs.InfoLog"/> class.
+            </summary>
+            <param name="stackTrace">The stack trace associated with the log.</param>
+            <param name="fileName">The name of the source file.</param>
+            <param name="lineNumber">The line number in the source file.</param>
+            <param name="message">The log message.</param>
+            <param name="objectState">The object state associated with the log.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Logs.WarningLog">
+            <summary>
+            Represents a log entry for warning messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.WarningLog.Tag">
+            <summary>
+            Gets the tag associated with warning logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.WarningLog.Type">
+            <summary>
+            Gets the type of the log entry.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.WarningLog.Color">
+            <summary>
+            Gets the color associated with the warning log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.WarningLog.FormattedMessage">
+            <summary>
+            Gets the formatted message for the warning log.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Logs.WarningLog.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.Logs.WarningLog.#ctor(System.Diagnostics.StackTrace,System.String,System.Int32,System.Object,ByteCobra.Logging.ObjectState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.Logs.WarningLog"/> class.
+            </summary>
+            <param name="stackTrace">The stack trace associated with the log.</param>
+            <param name="fileName">The name of the source file.</param>
+            <param name="lineNumber">The line number in the source file.</param>
+            <param name="message">The log message.</param>
+            <param name="objectState">The object state associated with the log.</param>
+        </member>
+        <member name="M:ByteCobra.Logging.Memory.Measure(System.Boolean)">
+            <summary>
+            Logs the current memory usage of the application.
+            </summary>
+            <param name="log">Whether to log the memory usage to the console.</param>
+            <returns>The current memory usage in megabytes.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.Memory.Collect">
+            <summary>
+            Forces an immediate garbage collection of all generations, waits for finalizers of objects that are ready to finalize,
+            and then forces another garbage collection to reclaim the memory of objects that were just finalized.
+            </summary>
+            <remarks>
+            This method triggers two full garbage collection cycles with a wait for pending finalizers in between.
+            Use this method judiciously as forcing garbage collection can affect application performance.
+            It's generally recommended to rely on the automatic garbage collection process unless there's a specific need
+            for immediate release of memory resources.
+            </remarks>
+        </member>
+        <member name="M:ByteCobra.Logging.ObjectExtensions.ToJson(System.Object)">
+            <summary>
+            Converts an object into a JSON string using Newtonsoft.Json, with pretty print formatting.
+            </summary>
+            <param name="obj">The object to convert.</param>
+            <returns>A pretty-printed JSON string representation of the object.</returns>
+        </member>
+        <member name="M:ByteCobra.Logging.ObjectExtensions.ToJsonFile(System.Object,System.String)">
+            <summary>
+            Converts an object into a JSON file.
+            </summary>
+            <param name="obj">The object to convert.</param>
+            <param name="path">The file path where the JSON will be saved.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.ObjectState">
+            <summary>
+            Represents the state of an object captured during logging.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.ObjectState.TimeStamp">
+            <summary>
+            Gets the timestamp when the state was captured.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.ObjectState.Message">
+            <summary>
+            Gets or sets an optional message associated with the state.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.ObjectState.State">
+            <summary>
+            Gets the captured object's state.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.ObjectState.StackTrace">
+            <summary>
+            Gets or sets the formatted stack trace associated with the state.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.ObjectState.#ctor(System.Object,System.Diagnostics.StackTrace)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ByteCobra.Logging.ObjectState"/> class with the specified object's state and optional stack trace.
+            </summary>
+            <param name="states">The captured object's state.</param>
+            <param name="stackTrace">An optional stack trace associated with the state.</param>
+        </member>
+        <member name="T:ByteCobra.Logging.Settings.ColorSettings">
+            <summary>
+            Provides settings for configuring log message colors.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.ColorSettings.DebugLogColor">
+            <summary>
+            Gets or sets the color for formatting debug log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.ColorSettings.InfoLogColor">
+            <summary>
+            Gets or sets the color for formatting informational log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.ColorSettings.WarningLogColor">
+            <summary>
+            Gets or sets the color for formatting warning log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.ColorSettings.AssertLogColor">
+            <summary>
+            Gets or sets the color for formatting assert log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.ColorSettings.ErrorLogColor">
+            <summary>
+            Gets or sets the color for formatting error log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.ColorSettings.FatalLogColor">
+            <summary>
+            Gets or sets the color for formatting fatal log messages.
+            </summary>
+        </member>
+        <member name="T:ByteCobra.Logging.Settings.FileSettings">
+            <summary>
+            Provides settings for configuring log file behavior.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FileSettings.MaxFileSize">
+            <summary>
+            Gets or sets the maximum allowed file size for log files. Defaults to 100 MB.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FileSettings.MaxStateDirectorySize">
+            <summary>
+            Gets or sets the maximum allowed file size for the state directory. Defaults to 100 MB.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FileSettings.LogFilesDirectory">
+            <summary>
+            Gets or sets the directory where log files will be stored.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FileSettings.StatesDirectory">
+            <summary>
+            Gets or sets the directory where object states will be serialized and stored.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FileSettings.SaveLogs">
+            <summary>
+            Gets or sets a value indicating whether all log messages are logged to files.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FileSettings.FileName">
+            <summary>
+            Gets or sets the filename for all log messages.
+            </summary>
+        </member>
+        <member name="T:ByteCobra.Logging.Settings.FormatSettings">
+            <summary>
+            Provides settings for formatting log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FormatSettings.DefaultFormat">
+            <summary>
+            Gets or sets the default log message format delegate.
+            </summary>
+            <remarks>
+            This delegate defines the default log message format. It takes a <see cref="T:ByteCobra.Logging.BaseLog"/>
+            instance as a parameter and returns the formatted log message. The format may vary based
+            on whether the application is running in the editor or not.
+            </remarks>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FormatSettings.DebugFormat">
+            <summary>
+            Gets or sets the log message format delegate for debug logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FormatSettings.InfoFormat">
+            <summary>
+            Gets or sets the log message format delegate for informational logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FormatSettings.WarningFormat">
+            <summary>
+            Gets or sets the log message format delegate for warning logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FormatSettings.AssertFormat">
+            <summary>
+            Gets or sets the log message format delegate for assert logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FormatSettings.ErrorFormat">
+            <summary>
+            Gets or sets the log message format delegate for error logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.FormatSettings.FatalFormat">
+            <summary>
+            Gets or sets the log message format delegate for fatal logs.
+            </summary>
+        </member>
+        <member name="T:ByteCobra.Logging.Settings.LogSettings">
+            <summary>
+            Provides settings for configuring the behavior of the logging system.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.MinimumLogLevel">
+            <summary>
+            The minimum log level.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.CaptureStackTrace">
+            <summary>
+            Gets or sets a value indicating whether to capture stack traces for logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.TimeFormat">
+            <summary>
+            Gets or sets the time format used for formatting log timestamps.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.QuitAction">
+            <summary>
+            Gets or sets the action to be executed when the application is quit.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.StateSerializer">
+            <summary>
+            Gets or sets the serializer for serializing state information of logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.FormatSettings">
+            <summary>
+            Gets or sets the settings for formatting log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.PrintSettings">
+            <summary>
+            Gets or sets the settings for printing log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.Filters">
+            <summary>
+            Gets or sets the set of filters to be applied to log messages.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.FileSettings">
+            <summary>
+            Gets or sets the settings for logging to files.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.TagSettings">
+            <summary>
+            Gets or sets the settings for log tag formatting.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.LogSettings.ColorSettings">
+            <summary>
+            Gets or sets the settings for log color formatting.
+            </summary>
+        </member>
+        <member name="T:ByteCobra.Logging.Settings.PrintSettings">
+            <summary>
+            Provides settings for printing log messages to the console or other output.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.PrintSettings.PrintDebug">
+            <summary>
+            Gets or sets the log message printer delegate for debug logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.PrintSettings.PrintInfo">
+            <summary>
+            Gets or sets the log message printer delegate for informational logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.PrintSettings.PrintWarning">
+            <summary>
+            Gets or sets the log message printer delegate for warning logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.PrintSettings.PrintAssert">
+            <summary>
+            Gets or sets the log message printer delegate for assert logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.PrintSettings.PrintError">
+            <summary>
+            Gets or sets the log message printer delegate for error logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.PrintSettings.PrintFatal">
+            <summary>
+            Gets or sets the log message printer delegate for fatal logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.TagSettings.FatalTag">
+            <summary>
+            The prefix for fatal logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.TagSettings.ErrorTag">
+            <summary>
+            The prefix for error logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.TagSettings.WarningTag">
+            <summary>
+            The prefix for warning logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.TagSettings.InfoTag">
+            <summary>
+            The prefix for info logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.TagSettings.DebugTag">
+            <summary>
+            The prefix for debug logs.
+            </summary>
+        </member>
+        <member name="P:ByteCobra.Logging.Settings.TagSettings.AssertTag">
+            <summary>
+            The prefix for assertion logs.
+            </summary>
+        </member>
+        <member name="T:ByteCobra.Logging.StateSerializer">
+            <summary>
+            Represents an abstract base class for state serializers used to serialize and save log object states.
+            </summary>
+        </member>
+        <member name="M:ByteCobra.Logging.StateSerializer.Serialize(ByteCobra.Logging.BaseLog)">
+            <summary>
+            Serializes and saves the state of a log object.
+            </summary>
+            <param name="log">The log object whose state needs to be serialized.</param>
+        </member>
+    </members>
+</doc>

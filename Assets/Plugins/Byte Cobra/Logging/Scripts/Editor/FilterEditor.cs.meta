@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f80b82e8282ddee44a9e9ed5ffef9b86
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rowTree: {fileID: 9197481963319205126, guid: 58eaf0f42850116409e1f217955c1c0b,
+      type: 3}
+  - mainTree: {fileID: 9197481963319205126, guid: 87d327a9ab7856e43b25a86344dfdebc,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Scripts/Editor/FilterEditor.cs
+  uploadId: 656953

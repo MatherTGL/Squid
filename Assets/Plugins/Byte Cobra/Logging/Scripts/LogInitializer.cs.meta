@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 346fea1e4baa5d64596ef450a0b536b0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - catLogSettings: {fileID: 11400000, guid: a8af45a6da4f6844b87136f74690b557, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Scripts/LogInitializer.cs
+  uploadId: 656953

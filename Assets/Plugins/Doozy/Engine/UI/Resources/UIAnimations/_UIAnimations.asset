@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ed4021c714f0f46bf3294e205c766c, type: 3}
+  m_Name: _UIAnimations
+  m_EditorClassIdentifier: 
+  Show:
+    DatabaseNames:
+    - Uncategorized
+    DatabaseType: 1
+    Databases:
+    - {fileID: 11400000, guid: 8e4e20ceb4377e64cb0438e0e7775a29, type: 2}
+  Hide:
+    DatabaseNames:
+    - Uncategorized
+    DatabaseType: 2
+    Databases:
+    - {fileID: 11400000, guid: 441061787a174744eb5c1a97c63a8511, type: 2}
+  Loop:
+    DatabaseNames:
+    - Uncategorized
+    DatabaseType: 3
+    Databases:
+    - {fileID: 11400000, guid: 13aae76f84e7d214481dd0d8050539b3, type: 2}
+  Punch:
+    DatabaseNames:
+    - Uncategorized
+    DatabaseType: 4
+    Databases:
+    - {fileID: 11400000, guid: d1ec88c072597cc43b91deadc2358cde, type: 2}
+  State:
+    DatabaseNames:
+    - Uncategorized
+    DatabaseType: 5
+    Databases:
+    - {fileID: 11400000, guid: 8ff775b0397345d4580c3267f01a32f7, type: 2}

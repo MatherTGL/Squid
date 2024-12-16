@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="Tabs" />
+    <ui:VisualElement name="general-settings" style="background-color: rgb(70, 70, 70);">
+        <ui:Label text="General Settings" display-tooltip-when-elided="true" style="font-size: 18px;" />
+        <uie:PropertyField name="loglevel" binding-path="MinimumLogLevel" label="Minimum Log Level" />
+        <ui:Toggle label="Capture Stacktrace" binding-path="CaptureStackTrace" name="stacktrace-toggle" style="justify-content: flex-start; align-items: auto;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Spacer" style="height: 20px; background-color: rgb(70, 70, 70); color: rgb(171, 30, 30);" />
+    <ui:VisualElement name="Tags" style="background-color: rgb(70, 70, 70); font-size: 15px;">
+        <ui:Label text="Tag Settings" display-tooltip-when-elided="true" style="font-size: 18px; height: 20px;" />
+        <ui:TextField picking-mode="Ignore" label="Debug Tag" value="filler text" text="filler text" binding-path="DebugTag" />
+        <ui:TextField picking-mode="Ignore" label="Info Tag" value="filler text" text="filler text" binding-path="InfoTag" />
+        <ui:TextField picking-mode="Ignore" label="Warning Tag" value="filler text" text="filler text" binding-path="WarningTag" />
+        <ui:TextField picking-mode="Ignore" label="Assert Tag" value="filler text" text="filler text" binding-path="AssertionTag" />
+        <ui:TextField picking-mode="Ignore" label="Error Tag" value="filler text" text="filler text" binding-path="ErrorTag" />
+        <ui:TextField picking-mode="Ignore" label="Fatal Tag" value="filler text" text="filler text" binding-path="FatalTag" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Spacer" style="height: 20px; background-color: rgb(70, 70, 70); color: rgb(171, 30, 30);" />
+    <ui:VisualElement name="Time" style="background-color: rgb(70, 70, 70); font-size: 15px;">
+        <ui:Label text="Time Settings" display-tooltip-when-elided="true" style="font-size: 18px; height: 20px;" />
+        <ui:TextField picking-mode="Ignore" label="Time Format" value="filler text" text="filler text" name="TimeFormat" binding-path="DateFormat" tooltip="Not used in the Unity editor" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Spacer" style="height: 20px; background-color: rgb(70, 70, 70); color: rgb(171, 30, 30);" />
+    <ui:VisualElement name="File" style="background-color: rgb(70, 70, 70); font-size: 15px;">
+        <ui:Label text="File Settings" display-tooltip-when-elided="true" style="font-size: 18px; height: 20px;" />
+        <ui:Toggle label="Save Logs" binding-path="SaveLogs" tooltip="If you want to save all log types to a file." name="save-logs" />
+        <ui:Toggle label="Save States" binding-path="SaveStates" tooltip="Save object states to the designated directory whenever a log with associated state data is generated." name="save-states" />
+        <ui:TextField picking-mode="Ignore" label="Logs Directory" value="filler text" text="Logs" binding-path="LogsDirectory" name="logs-dir" tooltip="The directory where all log files will be saved." style="align-items: stretch; flex-direction: column;" />
+        <ui:TextField picking-mode="Ignore" label="State Directory" value="filler text" text="Logs/States" binding-path="StatesDirectory" name="state-dir" tooltip="The directory where object states will be saved." style="flex-direction: column;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Spacer" style="height: 20px; background-color: rgb(70, 70, 70); color: rgb(171, 30, 30);" />
+    <ui:VisualElement name="filters">
+        <ui:Label text="Filters" display-tooltip-when-elided="true" style="font-size: 18px; height: 20px;" />
+        <uie:PropertyField name="directory-filters" binding-path="DirectoryFilter" label="Directory Filters" />
+        <uie:PropertyField name="namespace-filters" binding-path="NamespaceFilter" label="Namespace Filters" />
+    </ui:VisualElement>
+</ui:UXML>

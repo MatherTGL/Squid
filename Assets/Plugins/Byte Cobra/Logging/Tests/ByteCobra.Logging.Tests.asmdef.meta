@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 484dcebab4d492d45b7e231b973a4083
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233277
+  packageName: Cobra Logging
+  packageVersion: 2.6.3
+  assetPath: Assets/Byte Cobra/Logging/Tests/ByteCobra.Logging.Tests.asmdef
+  uploadId: 656953
