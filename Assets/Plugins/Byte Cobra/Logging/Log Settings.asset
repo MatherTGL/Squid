@@ -23,7 +23,7 @@ MonoBehaviour:
   AssertionTag: '[ASSERT]'
   FatalTag: '[FATAL]'
   DateFormat: HH:mm:ss
-  SaveLogs: 0
-  SaveStates: 0
+  SaveLogs: 1
+  SaveStates: 1
   LogsDirectory: Logs
   StatesDirectory: Logs/States
