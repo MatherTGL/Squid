@@ -42,5 +42,20 @@ namespace GameAssets.Core.Data
         }
 
         public Task PreloadAsync() => Task.CompletedTask;
+
+        public bool TryAddCoins(double amount)
+        {
+            return false;
+        }
+
+        public bool TrySpendCoins(double amount)
+        {
+            return false;
+        }
+
+        public bool TryAddLevel()
+        {
+            return false;
+        }
     }
 }

@@ -10,6 +10,9 @@ public static class ShopController
     public static async Task<Dictionary<string, Item>> InitAndGetItemsAsync()
         => await _IshopModel.InitAndGetItemsAsync();
 
-    public static void Buy(string indexItem)
-        => _IshopModel.Buy(indexItem);
+    public static bool TryBuy(string indexItem)
+        => _IshopModel.TryBuy(indexItem);
+    
+    public static bool TrySelect(string indexItem)
+        => _IshopModel.TrySelect(indexItem);
 }

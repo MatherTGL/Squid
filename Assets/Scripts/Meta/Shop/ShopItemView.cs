@@ -21,7 +21,13 @@ namespace GameAssets.Meta.Shop
         [Button("Buy", ButtonSizes.Medium)]
         public void Buy()
         {
-            ShopController.Buy(_indexItem);
+            var result = ShopController.TryBuy(_indexItem);
+        }
+
+        [Button("Select", ButtonSizes.Medium)]
+        public void Select()
+        {
+            var result = ShopController.TrySelect(_indexItem);
         }
     }
 }

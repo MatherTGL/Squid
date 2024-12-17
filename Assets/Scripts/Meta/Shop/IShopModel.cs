@@ -1,12 +1,15 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 namespace GameAssets.Meta.Shop
 {
     public interface IShopModel
     {
-        Task<Dictionary<string, Item>> InitAndGetItemsAsync();
+        UniTask<Dictionary<string, Item>> InitAndGetItemsAsync();
 
-        void Buy(string indexItem);
+        bool TryBuy(string indexItem);
+
+        bool TrySelect(string indexItem);
     }
 }

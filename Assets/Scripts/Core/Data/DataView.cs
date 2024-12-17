@@ -9,6 +9,7 @@ namespace GameAssets.Core.Data
         void IBoot.InitAwake()
         {
             Log.Debug("Init awake data view", state: true);
+            DataController.dataModel.Init();
         }
 
         void IBoot.InitStart()

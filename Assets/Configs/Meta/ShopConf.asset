@@ -16,10 +16,10 @@ MonoBehaviour:
   <GUID>k__BackingField: 866524083e6fe014c92b1c8dc66c34ed
   <itemsForBuy>k__BackingField:
     _pairs:
-    - _key: 
+    - _key: Name1
       _value:
-        itemName: 
+        itemName: Cookie
         icon: {fileID: 0}
-        buyCost: 0
+        buyCost: 500
         isBuyed: 0
         isSelected: 0

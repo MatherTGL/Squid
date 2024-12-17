@@ -1,5 +1,8 @@
 using System;
 using System.Threading.Tasks;
+using ByteCobra.Logging;
+using Cysharp.Threading.Tasks;
+using GameAssets.Core.Data;
 using GameAssets.Meta.Items.Interfaces;
 using GameAssets.Meta.Items.ScriptableObjects;
 using Newtonsoft.Json;
@@ -47,14 +50,20 @@ namespace GameAssets.Meta.Shop
             isSelected = loadedItem.isSelected;
         }
 
-        public void Buy()
+        public async UniTask<bool> TryBuy()
         {
-
+            if (isBuyed == false && await DataController.dataModel.TrySpendCoinsAsync(buyCost))
+            {
+                isBuyed = true;
+            }
+            
+            Log.Debug("Trying buy...", state: true);
+            return isBuyed;
         }
 
-        public void Select()
+        public bool TrySelect()
         {
-
+            return isSelected;
         }
 
         Task IPreloadable.PreloadAsync() => Task.CompletedTask;
