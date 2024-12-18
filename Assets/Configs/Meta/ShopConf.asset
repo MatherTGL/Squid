@@ -23,3 +23,10 @@ MonoBehaviour:
         buyCost: 500
         isBuyed: 0
         isSelected: 0
+    - _key: Name2
+      _value:
+        itemName: Cookie2
+        icon: {fileID: 0}
+        buyCost: 1000
+        isBuyed: 0
+        isSelected: 0

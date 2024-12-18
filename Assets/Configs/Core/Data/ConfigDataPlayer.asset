@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fc3637e899f4848ad08c0b4b70b097, type: 3}
   m_Name: ConfigDataPlayer
   m_EditorClassIdentifier: 
+  <NameKey>k__BackingField: ConfigDataPlayer
+  <GUID>k__BackingField: 1d0e77dacadc67e45bdeb53d872ad2b4
   <currentLevel>k__BackingField: 1
   <maxLevel>k__BackingField: 20
-  _baseCoins: 0
+  _baseCoins: 10000
   <currentCoins>k__BackingField: 0

@@ -8,7 +8,7 @@ namespace GameAssets.Meta.Shop
     {
         UniTask<Dictionary<string, Item>> InitAndGetItemsAsync();
 
-        bool TryBuy(string indexItem);
+        UniTask<bool> TryBuyAsync(string indexItem);
 
         bool TrySelect(string indexItem);
     }

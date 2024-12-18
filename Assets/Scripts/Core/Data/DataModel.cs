@@ -47,7 +47,7 @@ namespace GameAssets.Core.Data
             (config as ISaveable<ConfigData>).Save();
             
             Addressables.Release(config);
-            Log.Debug($"TrySpendCoins successful: {result}", state: result);
+            Log.Debug($"TrySpendCoins successful: {result}");
             return result;
         }
 

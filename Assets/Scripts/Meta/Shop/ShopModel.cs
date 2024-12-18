@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using ByteCobra.Logging;
 using Cysharp.Threading.Tasks;
 using GameAssets.Meta.Items.Interfaces;
 using UnityEngine.AddressableAssets;
@@ -12,24 +12,36 @@ namespace GameAssets.Meta.Shop
         private ShopConfig _shopConfig;
 
 
-        bool IShopModel.TryBuy(string indexItem)
+        async UniTask<bool> IShopModel.TryBuyAsync(string indexItem)
         {
             var item = _shopConfig.itemsForBuy.Dictionary[indexItem];
-            return false;
-            // if (item.currentLevel < item.maxLevel && DataContoller.Imodel.IsSpendCoins(item.currentCost, true))
-            // {
-            //     var oldProfitPerHour = item.currentProfitPerHour;
-            //     item.Upgrade();
-            //     ((ISaveable<Item>)item).Save();
-            //     var differenceProfit = item.currentProfitPerHour - oldProfitPerHour;
+            var result = await item.TryBuy();
+            
+            bool anyItem = _shopConfig.itemsForBuy.Dictionary.Any(item => item.Value.isSelected);
 
-            //     DataContoller.Imodel.UpgradePassiveIncome(differenceProfit);
-            //     Debug.Log($"{item.itemName} - current level: {item.currentLevel}");
-            // }
+            if (anyItem == false)
+                item.TrySelect(true);
+            
+            Log.Debug($"IsAnySelected: {anyItem} / selected by default: {item.isSelected}");
+            Log.Debug($"Buying item: {result}");
+            
+            return result;
         }
 
-        bool IShopModel.TrySelect(string indexItem)
+        bool IShopModel.TrySelect(string indexTargetItem)
         {
+            foreach (var item in _shopConfig.itemsForBuy.Dictionary.Keys)
+            {
+                if (_shopConfig.itemsForBuy.Dictionary[item].isSelected)
+                {
+                    _shopConfig.itemsForBuy.Dictionary[item].TrySelect(false);
+                    Log.Debug($"Selected item: {item} & state: {_shopConfig.itemsForBuy.Dictionary[item].isSelected}");
+                    _shopConfig.itemsForBuy.Dictionary[indexTargetItem].TrySelect(true); 
+                    Log.Debug($"New selected item: {_shopConfig.itemsForBuy.Dictionary[indexTargetItem]} / state: {_shopConfig.itemsForBuy.Dictionary[indexTargetItem].isSelected}");
+                    return true;
+                }
+            }
+            
             return false;
         }
 
@@ -41,7 +53,7 @@ namespace GameAssets.Meta.Shop
 
         private async UniTask LoadConfigAsync()
             => _shopConfig = await Addressables.LoadAssetAsync<ShopConfig>("ShopCookies").Task;
-
+        
         private async UniTask<Dictionary<string, Item>> GenerateItemsAsync()
         {
             Dictionary<string, Item> items = new();

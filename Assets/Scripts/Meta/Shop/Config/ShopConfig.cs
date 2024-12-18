@@ -28,9 +28,9 @@ namespace GameAssets.Meta.Shop
 
         [JsonIgnore, BoxGroup("Parameters")] public double buyCost;
 
-        [SerializeField, BoxGroup("Parameters")] public bool isBuyed;
+        [field: SerializeField, BoxGroup("Parameters")] public bool isBuyed { get; private set; }
 
-        [SerializeField, BoxGroup("Parameters")] public bool isSelected;
+        [field: SerializeField, BoxGroup("Parameters")] public bool isSelected { get; private set; }
 
         [JsonIgnore] string ISaveable<Item>.SaveId => itemName;
 
@@ -55,14 +55,17 @@ namespace GameAssets.Meta.Shop
             if (isBuyed == false && await DataController.dataModel.TrySpendCoinsAsync(buyCost))
             {
                 isBuyed = true;
+                (this as ISaveable<Item>).Save();
             }
             
             Log.Debug("Trying buy...", state: true);
             return isBuyed;
         }
 
-        public bool TrySelect()
+        public bool TrySelect(bool state)
         {
+            isSelected = state;
+            Log.Debug($"Trying to select {itemName} and result: {isSelected}");
             return isSelected;
         }
 

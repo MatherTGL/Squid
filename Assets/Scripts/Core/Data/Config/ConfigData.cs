@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using ByteCobra.Logging;
 using GameAssets.Meta.Items.Interfaces;
 using GameAssets.Meta.Items.ScriptableObjects;
 using Newtonsoft.Json;
@@ -45,17 +46,32 @@ namespace GameAssets.Core.Data
 
         public bool TryAddCoins(double amount)
         {
-            return false;
+            if (currentCoins < double.MaxValue)
+                return false;
+
+            currentCoins += amount;
+            Log.Debug($"CurrentCoins updated: {currentCoins}");
+            return true;
         }
 
         public bool TrySpendCoins(double amount)
         {
-            return false;
+            if (currentCoins < amount)
+                return false;
+            
+            currentCoins -= amount;
+            Log.Debug($"Current coins: {currentCoins}");
+            return true;
         }
 
         public bool TryAddLevel()
         {
-            return false;
+            if (currentLevel >= maxLevel)
+                return false;
+
+            currentLevel++;
+            Log.Debug($"Current level: {currentLevel}");
+            return true;
         }
     }
 }
