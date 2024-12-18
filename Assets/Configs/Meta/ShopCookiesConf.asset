@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900a8549343c42648a4f8b707a40bf6b, type: 3}
+  m_Name: ShopCookiesConf
+  m_EditorClassIdentifier: 
+  <NameKey>k__BackingField: ShopConf
+  <GUID>k__BackingField: 866524083e6fe014c92b1c8dc66c34ed
+  <itemsForBuy>k__BackingField:
+    _pairs:
+    - _key: Cookie_Star
+      _value:
+        itemName: Star
+        icon: {fileID: 0}
+        buyCost: 500
+        <isBuyed>k__BackingField: 0
+        <isSelected>k__BackingField: 0
+    - _key: Cookie_Car
+      _value:
+        itemName: Car
+        icon: {fileID: 0}
+        buyCost: 1000
+        <isBuyed>k__BackingField: 0
+        <isSelected>k__BackingField: 0

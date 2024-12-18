@@ -27,6 +27,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - ShopCookies
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b69b53626ec417a40b1e29ea8977f07d
+    m_Address: Assets/Configs/Meta/ShopSkinsConf.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ShopSkins
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a5a7e93d3959fa849b8bbc557a491223, type: 2}
   m_SchemaSet:

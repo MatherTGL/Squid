@@ -1,12 +1,16 @@
 using Boot;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using static Boot.Bootstrap;
 
 namespace GameAssets.Meta.Shop
 {
     public sealed class ShopView : MonoBehaviour, IBoot
     {
+        [SerializeField, Required, BoxGroup("Parameters")]
+        private AssetLabelReference configLabel;
+        
         [SerializeField, Required, BoxGroup("Parameters"), AssetsOnly]
         private ShopItemView _prefabItem;
 

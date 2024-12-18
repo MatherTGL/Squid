@@ -101,6 +101,7 @@ MonoBehaviour:
     - default
     - Data
     - ShopCookies
+    - ShopSkins
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 5f7d30711752ede42b93dbd85ee84014, type: 2}

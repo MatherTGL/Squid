@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 900a8549343c42648a4f8b707a40bf6b, type: 3}
-  m_Name: ShopConf
+  m_Name: ShopSkinsConf
   m_EditorClassIdentifier: 
   <NameKey>k__BackingField: ShopConf
   <GUID>k__BackingField: 866524083e6fe014c92b1c8dc66c34ed
   <itemsForBuy>k__BackingField:
     _pairs:
-    - _key: Name1
+    - _key: Skin_Red
       _value:
-        itemName: Cookie
+        itemName: Red
         icon: {fileID: 0}
         buyCost: 500
-        isBuyed: 0
-        isSelected: 0
-    - _key: Name2
+        <isBuyed>k__BackingField: 0
+        <isSelected>k__BackingField: 0
+    - _key: Skin_Black
       _value:
-        itemName: Cookie2
+        itemName: Black
         icon: {fileID: 0}
         buyCost: 1000
-        isBuyed: 0
-        isSelected: 0
+        <isBuyed>k__BackingField: 0
+        <isSelected>k__BackingField: 0
